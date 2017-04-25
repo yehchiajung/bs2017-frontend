@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<style>
+        h1 {
+            color: red;
+        }
+        
+        h2 {
+            color: aqua;
+        }
+    </style>-->
+    <style>
+        em {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <!--計算結果為:-->
+
+    <div id="result"></div>
+
+    <script>
+        //         var tempc = prompt("請輸入溫度");
+        //         var tempf = (tempc * 1.8) + 32;
+        //         var text = "攝氏" + tempc + "度,等於華氏" + tempf + "度";
+        //         if(tempc>25){
+        // var h2 = document.createElement("h2");
+        //  h2.innerHTML = "溫度是"+text;
+        //  document.getElementById("result").appendChild(h2);
+
+        //         }
+        //         else{
+        //         var h1 = document.createElement("h1");
+        //         h1.innerHTML = "溫度是"+text;
+
+        //         document.getElementById("result").appendChild(h1);
+        //         }
+        for (var i = 2; i < 10; i++) {
+            for (var j = 1; j < 10; j++) {
+                var result = i * j;
+                var mydiv = document.createElement("div");
+                mydiv.innerHTML = "<em>" + i + "</em> x <em>" + j + "</em> = <em>" + result + "</em>";
+                document.getElementById("result").appendChild(mydiv);
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <pre><script>
+            // 在這裡填入你的 JavaScript 的測試程式
+            // document.writeln() 類似 C# 的 Console.WriteLine()
+            // prompt() 類似 C# 的 Console.ReadLine()
+
+            // 一個陣列
+            var array = [1, 2, 3, 4, 5];                        
+
+            // 把陣列全部加成一個字串後傳回，元素之間自動加上 ","
+            document.writeln( array.join() );
+
+            // 取得第 0 個元素
+            document.writeln( array[0] ); 
+
+            // 取得最後一個元素
+            document.writeln( array[array.length - 4] );
+
+            // 取得第 5 個元素
+            document.writeln( array[5] );
+
+            // 更改第 4 個元素 (1, 2, 3, 6, 5)
+            array[3] = 6;
+            document.writeln( array.join() );
+
+            // 從右側加入新的元素 (1, 2, 3, 6, 5, 7, 8)
+            array.push(7)
+            array.push(8)
+            document.writeln( array.join() );
+
+            // 從右側拿掉一個元素 (1, 2, 3, 6, 5, 7)
+            var takeLastOne = array.pop();
+            document.writeln( array.join() );
+
+            // 從左側拿掉一個元素 (2, 3, 6, 5, 7)
+            var takeFirstOne = array.shift();
+            document.writeln( array.join() );
+
+            // 從左側側加入新的元素 (10, 9, 2, 3, 6, 5, 7)
+            array.unshift(9);
+            array.unshift(10);
+            document.writeln( array.join() );
+
+            // 把陣列大小變成 10 個元素，沒有值的取出會得到 undefined
+            array.length = 10;
+            document.writeln( array.pop() );
+
+            // 把陣列清到只剩下一個元素
+            array.length = 1;
+            document.writeln( array.join() );
+
+            // 兩個陣列串接成一個後回傳
+            var array2 = ["a", 1, "b", 2, "c", 3];
+            array = array.concat( array2 );
+            document.writeln( array.join() );
+            
+            // 把陣列全部加成一個字串後傳回，元素之間使用指定分隔符號 "-"
+            document.writeln( array.join("-") );
+
+            // 把陣列全部加成一個字串後傳回，元素之間不用任何分隔符號 ""
+            document.writeln( array.join("") );
+
+            // 更多的 array 操作方法
+            // https://www.w3schools.com/js/js_arrays.asp
+            // https://www.w3schools.com/js/js_array_methods.asp
+
+        </script></pre>
+    </body>
+</html>

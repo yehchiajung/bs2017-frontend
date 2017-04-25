@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <pre><script>
+            // 在這裡填入你的 JavaScript 的測試程式
+            // document.writeln() 類似 C# 的 Console.WriteLine()
+            // prompt() 類似 C# 的 Console.ReadLine()
+
+            var num = Math.floor(Math.random() * 10),
+                play = true,
+                guess = "";
+
+            while (play) {
+                guess = prompt("您猜多少呢？", guess);
+
+                if (guess == num) {
+                    play = false;
+                    document.writeln("猜對啦！答案是 " + num);
+                    //break;
+                }
+            }
+        </script></pre>
+    </body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="../../favicon.ico">
+
+  <title>Dashboard Template for Bootstrap</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="stylesheets/bootstrap.min.css" rel="stylesheet">
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <!--<link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">-->
+
+  <!-- Custom styles for this template -->
+  <link href="stylesheets/dashboard.css" rel="stylesheet">
+
+  <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+  <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+  <!--<script src="../../assets/js/ie-emulation-modes-warning.js"></script>-->
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+          aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        <a class="navbar-brand" href="#">Project name</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">Settings</a></li>
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Help</a></li>
+        </ul>
+        <form class="navbar-form navbar-right">
+          <input type="text" class="form-control" placeholder="Search...">
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-3 col-md-2 sidebar">
+        <ul class="nav nav-sidebar">
+          <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
+          <li><a href="#">Reports</a></li>
+          <li><a href="#">Analytics</a></li>
+          <li><a href="#">Export</a></li>
+        </ul>
+        <ul class="nav nav-sidebar">
+          <li><a href="">Nav item</a></li>
+          <li><a href="">Nav item again</a></li>
+          <li><a href="">One more nav</a></li>
+          <li><a href="">Another nav item</a></li>
+          <li><a href="">More navigation</a></li>
+        </ul>
+        <ul class="nav nav-sidebar">
+          <li><a href="">Nav item again</a></li>
+          <li><a href="">One more nav</a></li>
+          <li><a href="">Another nav item</a></li>
+        </ul>
+      </div>
+
+      <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+        <label>
+          <input id="convert-c" type="radio" name="convert-to" value="F" checked>攝氏轉華氏
+        </label>
+        <label>
+          <input id="convert-f" type="radio" name="convert-to" value="C">華氏轉攝氏
+        </label>
+        <div id="buttons">
+          <div class="row">
+            <div class="col-md-4">
+              <button type="button" class="btn btn-large btn-block btn-default input-pad" href="#" role="burtton">1</button>
+              <button type="button" class="btn btn-large btn-block btn-default input-pad" href="#" role="burtton">4</button>
+              <button type="button" class="btn btn-large btn-block btn-default input-pad" href="#" role="burtton">7</button>
+              <button type="button" class="btn btn-large btn-block btn-default input-pad" href="#" role="burtton">0</button>
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+              <button type="button" class="btn btn-large btn-block btn-default input-pad" href="#" role="burtton">2</button>
+              <button type="button" class="btn btn-large btn-block btn-default input-pad" href="#" role="burtton">5</button>
+              <button type="button" class="btn btn-large btn-block btn-default input-pad" href="#" role="burtton">8</button>
+              <button type="button" class="btn btn-large btn-block btn-default input-pad" href="#" role="burtton">.</button>
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+              <button type="button" class="btn btn-large btn-block btn-default input-pad" href="#" role="burtton">3</button>
+              <button type="button" class="btn btn-large btn-block btn-default input-pad" href="#" role="burtton">6</button>
+              <button type="button" class="btn btn-large btn-block btn-default input-pad" href="#" role="burtton">9</button>
+            </div>
+          </div>
+        </div>
+        <br />
+
+        <div class="input-group">
+          <input id="input" type="text" class="form-control">
+          <span class="input-group-btn">
+            
+            <a id="convert" class="btn btn-default" onclick="doCalc()" return false;href="#" role="button">轉換</a>
+            <a id="clear" class="btn btn-default" onclick="doclear()" return false; hreF="#" role="button">清除</a>
+          </span>
+        </div>
+        <br>
+        <div class="input-group">
+          <span class="input-group-addon" id="sizing-addon1">結果</span>
+          <input type="text" id="result" class="form-control" placeholder="" aria-describedby="basic-addon1">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  </div>
+
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!--<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>-->
+  <script src="scripts/bootstrap.min.js"></script>
+  <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+  <!--<script src="../../assets/js/vendor/holder.min.js"></script>-->
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <!--<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
+  <script>
+    $(function () {
+      $("#convert").click(function () {
+        var $input = $("#input"),
+          $result = $("#result"),
+          $converC = $("#convert-c"),
+          $converF = $("#convert-f"),
+          r = 0;
+        if ($converC.prop("checked")) {
+          r = ($input.val() * 1.8) + 32;
+        } else if ($converF.prop("checked")) {
+          r = ($input.val() - 32) / 1.8;
+        }
+        $result.val(r);
+      });
+
+      $("#clear").click(function () {
+        var $input = $("#input"),
+          $result = $("#result");
+        $("input").val("");
+        $("result").val("");
+      });
+
+      // function inputButton() {
+      //   var input = document.getElementById("input");
+      //   var text = this.innerHTML;
+      //   input.value+=text;
+      // }
+      // var inputButtons=document.getElementsByClassName("input-pad");
+      // for(var i=0;i<inputButtons.length;i++){
+      //   inputButtons[i].onclick=inputButton;
+      // }
+
+      $(".input-pad").click(function () {
+        var $input = $("#input"),
+          $text = $(this);
+        $input.val($input.val() + $text.text());
+        // input.value += text;
+      });
+    });
+    // var putinbuttons = document.getElementsByClassName("input-pad");
+    // //把0-9+.抓到putinbuttons裡面
+    // for (var i = 0; i < putinbuttons.length; i++) {
+    //   putinbuttons[i].onclick = putinbutton;
+    // }
+    // //給他一個迴圈 讓它的長度小於i
+  </script>
+</body>
+
+</html>

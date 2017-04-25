@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <pre><script>
+//             var a={
+// "abc":"123456",
+// "cdr":"d1g2"
+//             };
+//             alert(a.cdr+a.abc);
+
+// for(var i=1;i<10;i++){
+//     for(var j=1;j<10;j++){
+//         result=j*i;
+//         document.writeln(i+"x"+j+"="+result);
+//     }
+//     document.writeln("");
+//     // 當j到10的時候執行 代表空一行
+// }
+
+// var a={
+// fn:"aaaa",
+// ft:"bbb",
+// fk:"ddd"
+// };
+// for(var r in a){
+// var s=a[r];
+// document.writeln("屬性"+r+"的直為:"+s);
+// }
+
+// var r=true;
+// var count=0;
+// while(r){
+//     var a=Math.floor(Math.random()*10);
+// count+=1;
+// document.writeln("亂數"+a+"被抽了"+count+"次");
+
+// if(a==5){
+// r=false;
+// }
+// }
+
+var a=Math.floor(Math.random()*10);
+play=true;
+guess="";
+while(play){
+    guess=prompt("猜多少?",guess);
+    if(guess==a){
+        document.writeln("猜對了!!是:"+a);
+        play=false;
+    }
+}
+        </script></pre>
+</body>
+
+</html>
